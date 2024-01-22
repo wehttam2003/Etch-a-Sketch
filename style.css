@@ -3,6 +3,11 @@
     width: 50%;
     height: 500px;
 }
+
+.pad:hover{
+    background-color: rgb(247, 180, 191);
+}
+
 .pad-container{
     background-color: grey;
     display: flex;
