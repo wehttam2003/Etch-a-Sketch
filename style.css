@@ -1,16 +1,21 @@
+body{
+    margin: 0;
+}
+
 .pad {
     background-color: pink;
     border: 1px solid black;
-    height: 100px;
+    height: 100%;
     flex-grow: 1;
 }
 
 .pad-row{
     background-color: grey;
     display: flex;
-    flex-grow: 1;
+    flex-grow: 1
 }
 .pad-container{
     display: flex;
     flex-direction: column;
+    height: 100vh;
 }
