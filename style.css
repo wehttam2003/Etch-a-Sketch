@@ -1,0 +1,11 @@
+.pad {
+    background-color: pink;
+    width: 50%;
+    height: 500px;
+}
+.pad-container{
+    background-color: grey;
+    display: flex;
+    flex-wrap: wrap;
+
+}
