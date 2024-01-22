@@ -10,6 +10,8 @@ for (let i = 0; i < columnAmount; i++){
     for (let i = 0; i < rowAmount; i++){
         let pad = document.createElement("div");
         pad.classList.add("pad");
+        pad.addEventListener("mouseover", () => pad.style.backgroundColor="black")
+
         padRow.appendChild(pad);
     }
     padContainer.appendChild(padRow);
