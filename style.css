@@ -4,7 +4,6 @@ body{
 
 .pad {
     background-color: pink;
-    border: 1px solid black;
     height: 100%;
     flex-grow: 1;
     caret-color: transparent;
