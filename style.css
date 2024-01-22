@@ -5,7 +5,12 @@
     flex-grow: 1;
 }
 
-.pad-container{
+.pad-row{
     background-color: grey;
     display: flex;
+    flex-grow: 1;
+}
+.pad-container{
+    display: flex;
+    flex-direction: column;
 }
