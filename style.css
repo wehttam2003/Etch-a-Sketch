@@ -19,3 +19,17 @@ body{
     flex-direction: column;
     height: 100vh;
 }
+
+.button-container{
+    display: flex;
+    justify-content: center;
+}
+
+button{
+    margin-top: 5px;
+    position: fixed;
+    font-family: monospace;
+    background-color: rgb(255, 153, 170);
+    border: none;
+    border-radius: 5px;
+}
