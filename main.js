@@ -21,6 +21,10 @@ function generatePads(padAmount){
 }
 
 //create a function to clear the pads
+function clearPads(){
+    let padRows = document.querySelectorAll(".pad-row");
+    padRows.forEach( (padRow) => padRow.parentElement.removeChild(padRow) )
+}
 //create a button that is detached display
 //when the button is pressed promt for number of pads and store it in a variable
 
