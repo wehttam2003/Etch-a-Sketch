@@ -29,7 +29,10 @@ function changepadAmount(){
     clearPads()
     let padAmount = prompt("How many pads do you want on the width and height? ");
     if (padAmount > 100){
-        alert("max pad amount is 100!")
+        alert("pad amount cannot exceed 100!")
+        changepadAmount()
+    }else if (padAmount <= 0){
+        alert("pad amount cannot be less than 0!")
         changepadAmount()
     }else{
         generatePads(padAmount)
