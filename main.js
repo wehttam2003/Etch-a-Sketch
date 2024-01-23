@@ -1,5 +1,5 @@
 const padContainer = document.querySelector(".pad-container");
-console.log(padContainer);
+const padAmountbutton = document.querySelector("button");
 
 // TO-DO
 //place the nested for loops in a function that takes single param (padAmount)
@@ -20,12 +20,22 @@ function generatePads(padAmount){
     }
 }
 
-//create a function to clear the pads
 function clearPads(){
     let padRows = document.querySelectorAll(".pad-row");
     padRows.forEach( (padRow) => padRow.parentElement.removeChild(padRow) )
 }
-//create a button that is detached display
-//when the button is pressed promt for number of pads and store it in a variable
 
+function changepadAmount(){
+    clearPads()
+    let padAmount = prompt("How many pads do you want on the width and height? ");
+    if (padAmount > 100){
+        alert("max pad amount is 100!")
+        changepadAmount()
+    }else{
+        generatePads(padAmount)
+    }
+
+}
+
+padAmountbutton.addEventListener("click", changepadAmount)
 generatePads(16);
